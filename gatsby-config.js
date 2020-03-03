@@ -2,7 +2,14 @@ module.exports = {
   siteMetadata: {
     title: "Kitaka",
     description: "A good way to start a new Gatsby project.",
-    heroBackground: "hero.jpg",
+    hero: {
+      doodle: "SprintingDoodle",
+    },
+    home: {
+      sections: {
+        align: "",
+      },
+    },
   },
   plugins: ["gatsby-plugin-sass"],
 }

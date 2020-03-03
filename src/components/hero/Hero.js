@@ -10,7 +10,9 @@ const Hero = () => {
         siteMetadata {
           title
           description
-          heroBackground
+          hero {
+            doodle
+          }
         }
       }
     }
@@ -21,12 +23,14 @@ const Hero = () => {
       className={styles.root}
       style={{
         backgroundImage: `url(
-          /images/${data.site.siteMetadata.heroBackground}
+          /doodles/${data.site.siteMetadata.hero.doodle}.svg
         )`,
       }}
     >
-      <h1>{data.site.siteMetadata.title}</h1>
-      <h2>{data.site.siteMetadata.description}</h2>
+      <div>
+        <h1>{data.site.siteMetadata.title}</h1>
+        <h2>{data.site.siteMetadata.description}</h2>
+      </div>
     </div>
   )
 }
