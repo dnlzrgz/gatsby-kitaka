@@ -14,10 +14,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@nfront/global-styles": "^1.2.1",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.7",
-    "gatsby-plugin-global-styles": "^1.0.17",
     "gatsby-plugin-sass": "^2.1.29",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
