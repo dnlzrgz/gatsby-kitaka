@@ -1,3 +1,13 @@
 import React from "react"
 
-export default () => <div>Hello world!</div>
+import Hero from "../components/hero/Hero"
+
+const IndexPage = () => {
+  return (
+    <React.Fragment>
+      <Hero />
+    </React.Fragment>
+  )
+}
+
+export default IndexPage
