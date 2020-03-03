@@ -1,9 +1,8 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "Kitaka",
+    description: "A good way to start a new Gatsby project.",
+    heroBackground: "hero.jpg",
+  },
+  plugins: ["gatsby-plugin-sass"],
 }
