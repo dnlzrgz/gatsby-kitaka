@@ -6,12 +6,14 @@ import styles from "./indexContent.module.scss"
 const IndexContent = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___order] }) {
+      allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "section" } } }
+        sort: { order: ASC, fields: [frontmatter___order] }
+      ) {
         nodes {
           frontmatter {
             title
             doodle
-            description
           }
           html
         }

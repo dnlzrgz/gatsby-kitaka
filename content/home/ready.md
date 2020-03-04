@@ -1,6 +1,6 @@
 ---
 title: "Ready"
-description: ""
+type: "section"
 doodle: "RollerSkatingDoodle"
 order: 3
 ---

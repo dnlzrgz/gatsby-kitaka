@@ -1,6 +1,6 @@
 ---
 title: "Fast"
-description: ""
+type: "section"
 doodle: "CoffeeDoodle"
 order: 2
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Easy"
-description: ""
+type: "section"
 doodle: "DancingDoodle"
 order: 1
 ---
