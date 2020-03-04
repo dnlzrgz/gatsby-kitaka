@@ -22,5 +22,17 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
+    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Kitaka",
+        short_name: "Kitaka",
+        start_url: "/",
+        background_color: "#eff1f3",
+        theme_color: "#009fb7",
+        display: "standalone",
+      },
+    },
   ],
 }
