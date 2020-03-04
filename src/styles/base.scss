@@ -1,0 +1,19 @@
+@import "./vars.scss";
+
+body {
+  background-color: $white;
+  font-family: $ff;
+  font-size: $p;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
