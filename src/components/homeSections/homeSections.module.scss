@@ -5,6 +5,10 @@
     text-align: justify;
     margin: 4.75rem 14%;
 
+    & > header {
+      margin-bottom: 1.75rem;
+    }
+
     & > div {
       margin-top: 4.75rem;
       background-repeat: no-repeat;
