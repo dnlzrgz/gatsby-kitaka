@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import styles from "./indexContent.module.scss"
+import styles from "./homeSections.module.scss"
 
-const IndexContent = () => {
+const HomeSections = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
@@ -46,4 +46,4 @@ const IndexContent = () => {
   )
 }
 
-export default IndexContent
+export default HomeSections

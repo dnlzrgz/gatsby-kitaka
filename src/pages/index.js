@@ -1,14 +1,14 @@
 import React from "react"
 
 import Hero from "../components/hero/Hero"
-import IndexContent from "../components/indexContent/IndexContent"
+import HomeSections from "../components/homeSections/HomeSections"
 
 const IndexPage = () => {
   return (
     <React.Fragment>
       <main>
         <Hero />
-        <IndexContent />
+        <HomeSections />
       </main>
     </React.Fragment>
   )
