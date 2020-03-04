@@ -1,0 +1,16 @@
+@import "../../styles/vars.scss";
+
+.root {
+  section {
+    text-align: justify;
+    margin: 4.75rem 14%;
+
+    & > div {
+      margin-top: 4.75rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: auto;
+      height: 30vh;
+    }
+  }
+}
