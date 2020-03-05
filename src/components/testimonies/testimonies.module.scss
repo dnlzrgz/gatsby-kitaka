@@ -1,0 +1,29 @@
+@import "../../styles/vars.scss";
+
+.root {
+  margin: 0 14%;
+
+  & header {
+    margin-bottom: 1.75rem;
+  }
+
+  & p {
+    margin-bottom: 1.75rem;
+    margin-top: 0.25rem;
+    text-align: center;
+  }
+
+  & div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    margin: 0 auto;
+  }
+
+  & div div {
+    background-color: lighten($color: $black, $amount: 50);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+}
