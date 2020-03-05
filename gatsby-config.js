@@ -2,14 +2,25 @@ module.exports = {
   siteMetadata: {
     title: "Kitaka",
     description: "A good way to start a new Gatsby project.",
+    copy:
+      "© Daniel (Danielkvist) 2020. Made with Gatsby and love, a lot of love.",
     hero: {
       doodle: "SprintingDoodle",
     },
-    home: {
-      sections: {
-        align: "",
+    social: [
+      {
+        name: "Twitter",
+        url: "#",
       },
-    },
+      {
+        name: "Facebook",
+        url: "#",
+      },
+      {
+        name: "Instagram",
+        url: "#",
+      },
+    ],
   },
   plugins: [
     "gatsby-plugin-sass",
