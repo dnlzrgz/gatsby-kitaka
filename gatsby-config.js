@@ -4,9 +4,6 @@ module.exports = {
     description: "A good way to start a new Gatsby project.",
     copy:
       "© Daniel (Danielkvist) 2020. Made with Gatsby and love, a lot of love.",
-    hero: {
-      doodle: "SprintingDoodle",
-    },
     social: [
       {
         name: "Twitter",

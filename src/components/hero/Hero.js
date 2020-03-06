@@ -10,26 +10,18 @@ const Hero = () => {
         siteMetadata {
           title
           description
-          hero {
-            doodle
-          }
         }
       }
     }
   `)
 
   return (
-    <div
-      className={styles.root}
-      style={{
-        backgroundImage: `url(
-          /doodles/${data.site.siteMetadata.hero.doodle}.svg
-        )`,
-      }}
-    >
+    <div className={styles.root}>
       <div>
-        <h1>{data.site.siteMetadata.title}</h1>
-        <h2>{data.site.siteMetadata.description}</h2>
+        <h1 className={styles.title}>{data.site.siteMetadata.title}</h1>
+        <h2 className={styles.subtitle}>
+          {data.site.siteMetadata.description}
+        </h2>
       </div>
     </div>
   )
