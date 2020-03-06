@@ -22,18 +22,20 @@ const HomeSections = () => {
   `)
 
   return (
-    <div className={styles.root}>
+    <div className={`${styles.root} container`}>
       {data.allMarkdownRemark.nodes.map(section => {
         return (
           <section key={section.id} className={styles.section}>
             <header className={styles.header}>
-              <h1 className={styles.title}>{section.frontmatter.title}</h1>
+              <h1 className="section-title">{section.frontmatter.title}</h1>
             </header>
+
             <main
               dangerouslySetInnerHTML={{
                 __html: section.html,
               }}
             ></main>
+
             <div
               style={{
                 backgroundImage: `url(/doodles/${section.frontmatter.doodle}.svg)`,

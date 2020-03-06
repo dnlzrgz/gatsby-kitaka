@@ -1,43 +1,41 @@
 @import "../../styles/vars.scss";
 
 .root {
-  margin: 4.75rem 7%;
-  max-width: $md;
-
-  & header {
-    margin-bottom: 1.75rem;
-  }
-
-  & main {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  @media (min-width: $xs) {
-    margin: 4.75rem 14%;
-  }
-
   @media (min-width: $sm) {
-    & header {
-      margin: 4.75rem auto;
-      max-width: 55%;
-    }
+    padding: 0 9%;
+    margin: 0 auto;
+    margin-bottom: 4.75rem;
   }
 
   @media (min-width: $md) {
-    margin: 4.75rem auto;
+    padding: 0;
+  }
+}
 
-    & header h1 {
-      font-size: $h2;
-    }
+.posts {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: $md;
+  flex-shrink: 0;
+
+  @media (min-width: $md) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.title {
+  margin: 0 auto;
+  margin-bottom: 1.75rem;
+  max-width: $xs;
+
+  @media (min-width: $md) {
+    font-size: $h2;
   }
 
   @media (min-width: $lg) {
-    & header h1 {
-      font-size: $h3;
-    }
+    font-size: $h3;
   }
 }
 

@@ -22,17 +22,17 @@ const Testimonies = () => {
   `)
 
   return (
-    <section className={styles.root}>
+    <section className={`${styles.root} container`}>
       <header>
-        <h1>Testimonies</h1>
+        <h1 className={styles.title}>Testimonies</h1>
       </header>
 
       <main>
         {data.allMarkdownRemark.nodes.map(testimony => {
           return (
-            <div key={testimony.id}>
-              <div></div>
-              <p>{testimony.frontmatter.title}</p>
+            <div key={testimony.id} className={styles.testimony}>
+              <div className={styles.avatar}></div>
+              <p className={styles.name}>{testimony.frontmatter.title}</p>
             </div>
           )
         })}

@@ -1,36 +1,9 @@
 @import "../../styles/vars.scss";
 
 .root {
-  margin: 4.75rem 7%;
-  max-width: $md;
-
-  & header {
-    margin-bottom: 1.75rem;
-  }
-
-  & p {
-    margin-bottom: 1.75rem;
-    margin-top: 0.25rem;
-    text-align: center;
-  }
-
-  & div {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    margin: 0 auto;
-  }
-
-  & div div {
-    background-color: lighten($color: $black, $amount: 50);
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-  }
+  margin-bottom: 4.75rem;
 
   @media (min-width: $xs) {
-    margin: 4.75rem 14%;
-
     & main {
       display: flex;
       flex-wrap: wrap;
@@ -39,17 +12,38 @@
   }
 
   @media (min-width: $md) {
-    margin: 4.75rem auto;
     max-width: $sm;
-
-    & header h1 {
-      font-size: $h2;
-    }
-
-    @media (min-width: $lg) {
-      & header h1 {
-        font-size: $h3;
-      }
-    }
   }
+}
+
+.title {
+  margin: 0 auto;
+  margin-bottom: 1.75rem;
+  max-width: $xs;
+
+  @media (min-width: $md) {
+    font-size: $h2;
+  }
+
+  @media (min-width: $lg) {
+    font-size: $h3;
+  }
+}
+
+.testimony {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  margin-bottom: 1.75rem;
+  margin-top: 0.25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.avatar {
+  background-color: lighten($color: $black, $amount: 50);
+  border-radius: 50%;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
 }

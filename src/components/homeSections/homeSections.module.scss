@@ -2,12 +2,6 @@
 
 .root {
   text-align: justify;
-  margin: 4.75rem 7%;
-  max-width: $md;
-
-  @media (min-width: $md) {
-    margin: 4.75rem auto;
-  }
 }
 
 .section {
@@ -20,30 +14,19 @@
     width: auto;
   }
 
-  @media (min-width: $xs) {
-    margin: 4.75rem 14%;
-  }
-
   @media (min-width: $sm) {
-    margin: 4.75rem auto;
-    max-width: 55%;
+    margin: 0 auto;
+    margin-bottom: 4.75rem;
+    max-width: $xs;
 
     & div {
-      height: 40vh;
+      height: 55vh;
+      max-height: 350px;
+      width: auto;
     }
   }
 }
 
 .header {
   margin-bottom: 1.75rem;
-}
-
-.title {
-  @media (min-width: $md) {
-    font-size: $h2;
-  }
-
-  @media (min-width: $lg) {
-    font-size: $h3;
-  }
 }

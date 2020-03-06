@@ -20,3 +20,28 @@ h2 {
 h3 {
   font-size: $h3;
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $md;
+  padding: 0 7%;
+
+  @media (min-width: $xs) {
+    padding: 0 9%;
+  }
+
+  @media (min-width: $md) {
+    padding: 0;
+  }
+}
+
+.section-title {
+  @media (min-width: $md) {
+    font-size: $h2;
+  }
+
+  @media (min-width: $lg) {
+    font-size: $h3;
+  }
+}

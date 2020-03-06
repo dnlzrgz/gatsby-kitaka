@@ -25,10 +25,10 @@ const LatestPosts = () => {
   return (
     <section className={styles.root}>
       <header>
-        <h1>Latest Posts</h1>
+        <h1 className={styles.title}>Latest Posts</h1>
       </header>
 
-      <main>
+      <main className={styles.posts}>
         {data.allMarkdownRemark.nodes.map(post => {
           return (
             <div key={post.id} className={styles.post}>

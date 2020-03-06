@@ -4,6 +4,9 @@
   display: grid;
   height: 100vh;
   place-items: center;
+  max-width: $md;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .title,
