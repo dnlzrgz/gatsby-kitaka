@@ -1,0 +1,8 @@
+@import "../../styles/vars.scss";
+
+.root {
+  background-color: $background;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
