@@ -1,4 +1,4 @@
-@import "../../styles/vars.scss";
+@import '../../styles/vars.scss';
 
 .root {
   margin-bottom: 4.75rem;
@@ -35,7 +35,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   margin-bottom: 1.75rem;
-  margin-top: 0.25rem;
   margin: 0 auto;
   text-align: center;
 }
