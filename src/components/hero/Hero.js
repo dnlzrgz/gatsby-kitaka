@@ -1,7 +1,7 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import styles from "./hero.module.scss"
+import styles from './hero.module.scss';
 
 const Hero = () => {
   const data = useStaticQuery(graphql`
@@ -13,7 +13,7 @@ const Hero = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div className={styles.root}>
@@ -24,7 +24,7 @@ const Hero = () => {
         </h2>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

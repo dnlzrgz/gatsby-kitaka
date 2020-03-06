@@ -1,9 +1,9 @@
 ---
-title: "React"
-description: "Sed ut laoreet nisl, ultricies pellentesque velit. Sed varius leo at ante eleifend, sed sagittis risus maximus."
-type: "post"
-date: ""
-publishDate: ""
+title: 'React'
+description: 'Sed ut laoreet nisl, ultricies pellentesque velit. Sed varius leo at ante eleifend, sed sagittis risus maximus.'
+type: 'post'
+date: ''
+publishDate: ''
 draft: false
 ---
 

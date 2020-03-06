@@ -1,9 +1,9 @@
 ---
-title: "Gatsby"
-description: "Sed imperdiet vel lorem ut sodales. Curabitur at massa eget tellus imperdiet pulvinar."
-type: "post"
-date: ""
-publishDate: ""
+title: 'Gatsby'
+description: 'Sed imperdiet vel lorem ut sodales. Curabitur at massa eget tellus imperdiet pulvinar.'
+type: 'post'
+date: ''
+publishDate: ''
 draft: false
 ---
 

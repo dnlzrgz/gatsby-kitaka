@@ -1,9 +1,9 @@
 ---
-title: "Netlify"
-description: "Sed varius leo at ante eleifend, sed sagittis risus maximus."
-type: "post"
-date: ""
-publishDate: ""
+title: 'Netlify'
+description: 'Sed varius leo at ante eleifend, sed sagittis risus maximus.'
+type: 'post'
+date: ''
+publishDate: ''
 draft: false
 ---
 

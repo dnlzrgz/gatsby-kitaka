@@ -1,7 +1,7 @@
 ---
-title: "Ready"
-type: "section"
-doodle: "RollerSkatingDoodle"
+title: 'Ready'
+type: 'section'
+doodle: 'RollerSkatingDoodle'
 order: 3
 ---
 

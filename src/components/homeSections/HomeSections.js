@@ -1,7 +1,7 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import styles from "./homeSections.module.scss"
+import styles from './homeSections.module.scss';
 
 const HomeSections = () => {
   const data = useStaticQuery(graphql`
@@ -19,11 +19,11 @@ const HomeSections = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div className={`${styles.root} container`}>
-      {data.allMarkdownRemark.nodes.map(section => {
+      {data.allMarkdownRemark.nodes.map((section) => {
         return (
           <section key={section.id} className={styles.section}>
             <header className={styles.header}>
@@ -42,10 +42,10 @@ const HomeSections = () => {
               }}
             ></div>
           </section>
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};
 
-export default HomeSections
+export default HomeSections;

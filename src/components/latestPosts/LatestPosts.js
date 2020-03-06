@@ -1,7 +1,7 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import styles from "./latestPosts.module.scss"
+import styles from './latestPosts.module.scss';
 
 const LatestPosts = () => {
   const data = useStaticQuery(graphql`
@@ -20,7 +20,7 @@ const LatestPosts = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <section className={styles.root}>
@@ -29,17 +29,17 @@ const LatestPosts = () => {
       </header>
 
       <main className={styles.posts}>
-        {data.allMarkdownRemark.nodes.map(post => {
+        {data.allMarkdownRemark.nodes.map((post) => {
           return (
             <div key={post.id} className={styles.post}>
               <a>{post.frontmatter.title}</a>
               <main>{post.frontmatter.description}</main>
             </div>
-          )
+          );
         })}
       </main>
     </section>
-  )
-}
+  );
+};
 
-export default LatestPosts
+export default LatestPosts;

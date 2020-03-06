@@ -1,51 +1,51 @@
 const siteMetadata = {
-  title: "Kitaka",
-  description: "A good way to start a new Gatsby project.",
+  title: 'Kitaka',
+  description: 'A good way to start a new Gatsby project.',
   copy:
-    "© Daniel (Danielkvist) 2020. Made with Gatsby and love, a lot of love.",
+    '© Daniel (Danielkvist) 2020. Made with Gatsby and love, a lot of love.',
   social: [
     {
-      name: "Twitter",
-      url: "#",
+      name: 'Twitter',
+      url: '#',
     },
     {
-      name: "Facebook",
-      url: "#",
+      name: 'Facebook',
+      url: '#',
     },
     {
-      name: "Instagram",
-      url: "#",
+      name: 'Instagram',
+      url: '#',
     },
   ],
-}
+};
 
 const plugins = [
-  "gatsby-plugin-react-helmet",
-  "gatsby-plugin-sass",
-  "gatsby-plugin-optimize-svgs",
-  "gatsby-transformer-remark",
+  'gatsby-plugin-react-helmet',
+  'gatsby-plugin-sass',
+  'gatsby-plugin-optimize-svgs',
+  'gatsby-transformer-remark',
   {
-    resolve: "gatsby-source-filesystem",
+    resolve: 'gatsby-source-filesystem',
     options: {
-      name: "src",
+      name: 'src',
       path: `${__dirname}/content/`,
     },
   },
   {
-    resolve: "gatsby-plugin-manifest",
+    resolve: 'gatsby-plugin-manifest',
     options: {
-      name: "Kitaka",
-      short_name: "Kitaka",
-      start_url: "/",
-      background_color: "#eff1f3",
-      theme_color: "#009fb7",
-      display: "standalone",
+      name: 'Kitaka',
+      short_name: 'Kitaka',
+      start_url: '/',
+      background_color: '#eff1f3',
+      theme_color: '#009fb7',
+      display: 'standalone',
     },
   },
-  "gatsby-plugin-offline",
-]
+  'gatsby-plugin-offline',
+];
 
 module.exports = {
   siteMetadata,
   plugins,
-}
+};
