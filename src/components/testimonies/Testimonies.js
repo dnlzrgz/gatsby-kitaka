@@ -27,14 +27,16 @@ const Testimonies = () => {
         <h1>Testimonies</h1>
       </header>
 
-      {data.allMarkdownRemark.nodes.map(testimony => {
-        return (
-          <div key={testimony.id}>
-            <div></div>
-            <p>{testimony.frontmatter.title}</p>
-          </div>
-        )
-      })}
+      <main>
+        {data.allMarkdownRemark.nodes.map(testimony => {
+          return (
+            <div key={testimony.id}>
+              <div></div>
+              <p>{testimony.frontmatter.title}</p>
+            </div>
+          )
+        })}
+      </main>
     </section>
   )
 }

@@ -25,9 +25,9 @@ const HomeSections = () => {
     <div className={styles.root}>
       {data.allMarkdownRemark.nodes.map(section => {
         return (
-          <section key={section.id}>
-            <header>
-              <h1>{section.frontmatter.title}</h1>
+          <section key={section.id} className={styles.section}>
+            <header className={styles.header}>
+              <h1 className={styles.title}>{section.frontmatter.title}</h1>
             </header>
             <main
               dangerouslySetInnerHTML={{

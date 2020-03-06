@@ -28,16 +28,16 @@ const LatestPosts = () => {
         <h1>Latest Posts</h1>
       </header>
 
-      {data.allMarkdownRemark.nodes.map(post => {
-        return (
-          <article key={post.id}>
-            <header>
-              <h2>{post.frontmatter.title}</h2>
-            </header>
-            <main>{post.frontmatter.description}</main>
-          </article>
-        )
-      })}
+      <main>
+        {data.allMarkdownRemark.nodes.map(post => {
+          return (
+            <div key={post.id} className={styles.post}>
+              <a>{post.frontmatter.title}</a>
+              <main>{post.frontmatter.description}</main>
+            </div>
+          )
+        })}
+      </main>
     </section>
   )
 }

@@ -1,20 +1,49 @@
 @import "../../styles/vars.scss";
 
 .root {
-  section {
-    text-align: justify;
+  text-align: justify;
+  margin: 4.75rem 7%;
+  max-width: $md;
+
+  @media (min-width: $md) {
+    margin: 4.75rem auto;
+  }
+}
+
+.section {
+  & div {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin-top: 4.75rem;
+    max-height: 300px;
+    width: auto;
+  }
+
+  @media (min-width: $xs) {
     margin: 4.75rem 14%;
+  }
 
-    & > header {
-      margin-bottom: 1.75rem;
-    }
+  @media (min-width: $sm) {
+    margin: 4.75rem auto;
+    max-width: 55%;
 
-    & > div {
-      margin-top: 4.75rem;
-      background-repeat: no-repeat;
-      background-position: center center;
-      width: auto;
-      height: 30vh;
+    & div {
+      height: 40vh;
     }
+  }
+}
+
+.header {
+  margin-bottom: 1.75rem;
+}
+
+.title {
+  @media (min-width: $md) {
+    font-size: $h2;
+  }
+
+  @media (min-width: $lg) {
+    font-size: $h3;
   }
 }

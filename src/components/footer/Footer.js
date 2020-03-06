@@ -11,10 +11,10 @@ const SocialLink = props => {
 const SocialLinks = props => {
   const { links } = props
   return (
-    <ul>
+    <ul className={styles.links}>
       {links.map(link => {
         return (
-          <li>
+          <li key={link.name}>
             <SocialLink name={link.name} url={link.url} />
           </li>
         )

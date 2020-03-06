@@ -1,7 +1,8 @@
 @import "../../styles/vars.scss";
 
 .root {
-  margin: 0 14%;
+  margin: 4.75rem 7%;
+  max-width: $md;
 
   & header {
     margin-bottom: 1.75rem;
@@ -25,5 +26,30 @@
     border-radius: 50%;
     height: 100px;
     width: 100px;
+  }
+
+  @media (min-width: $xs) {
+    margin: 4.75rem 14%;
+
+    & main {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0.75rem;
+    }
+  }
+
+  @media (min-width: $md) {
+    margin: 4.75rem auto;
+    max-width: $sm;
+
+    & header h1 {
+      font-size: $h2;
+    }
+
+    @media (min-width: $lg) {
+      & header h1 {
+        font-size: $h3;
+      }
+    }
   }
 }
