@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { graphql, useStaticQuery } from 'gatsby';
 
 import styles from './footer.module.scss';
@@ -6,6 +7,11 @@ import styles from './footer.module.scss';
 const SocialLink = (props) => {
   const { name, url } = props;
   return <a href={url}>{name}</a>;
+};
+
+SocialLink.propTypes = {
+  name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 const SocialLinks = (props) => {
@@ -21,6 +27,10 @@ const SocialLinks = (props) => {
       })}
     </ul>
   );
+};
+
+SocialLinks.propTypes = {
+  links: PropTypes.array.isRequired,
 };
 
 const Footer = () => {

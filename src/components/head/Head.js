@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -19,6 +20,10 @@ const Head = ({ title }) => {
       <meta name="description" content={data.site.siteMetadata.description} />
     </Helmet>
   );
+};
+
+Head.propTypes = {
+  title: PropTypes.string.isRequired,
 };
 
 export default Head;
