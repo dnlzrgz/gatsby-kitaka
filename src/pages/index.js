@@ -8,7 +8,7 @@ import Testimonies from "../components/testimonies/Testimonies"
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout title="Home">
       <Hero />
       <HomeSections />
       <LatestPosts />
