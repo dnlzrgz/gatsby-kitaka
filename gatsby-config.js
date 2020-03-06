@@ -3,6 +3,11 @@ const siteMetadata = {
   description: 'A good way to start a new Gatsby project.',
   copy:
     '© Daniel (Danielkvist) 2020. Made with Gatsby and love, a lot of love.',
+  pages: {
+    notFound: {
+      msg: '404',
+    },
+  },
   social: [
     {
       name: 'Twitter',
@@ -21,6 +26,12 @@ const siteMetadata = {
 
 const plugins = [
   'gatsby-plugin-react-helmet',
+  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_TRACKING_ID,
+    },
+  },
   'gatsby-plugin-sass',
   'gatsby-plugin-optimize-svgs',
   'gatsby-transformer-remark',
