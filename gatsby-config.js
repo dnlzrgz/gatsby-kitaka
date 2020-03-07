@@ -29,10 +29,17 @@ const plugins = [
   {
     resolve: `gatsby-plugin-google-analytics`,
     options: {
-      trackingId: process.env.GOOGLE_TRACKING_ID,
+      trackingId: process.env.GOOGLE_ANALYTICS_ID,
     },
   },
   'gatsby-plugin-sass',
+  {
+    resolve: 'gatsby-plugin-purgecss',
+    options: {
+      // printRejected: true,
+      // develop: true,
+    },
+  },
   'gatsby-plugin-optimize-svgs',
   'gatsby-transformer-remark',
   {
