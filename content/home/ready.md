@@ -1,7 +1,7 @@
 ---
 title: 'Ready'
 type: 'section'
-doodle: 'RollerSkatingDoodle'
+image: '/doodles/RollerSkatingDoodle.svg'
 order: 3
 ---
 

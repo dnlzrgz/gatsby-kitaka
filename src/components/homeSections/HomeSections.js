@@ -13,7 +13,7 @@ const HomeSections = () => {
         nodes {
           frontmatter {
             title
-            doodle
+            image
           }
           html
         }
@@ -38,7 +38,7 @@ const HomeSections = () => {
 
             <div
               style={{
-                backgroundImage: `url(/doodles/${section.frontmatter.doodle}.svg)`,
+                backgroundImage: `url(${section.frontmatter.image})`,
               }}
             ></div>
           </section>

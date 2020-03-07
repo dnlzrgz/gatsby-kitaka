@@ -1,4 +1,4 @@
-@import "../../styles/vars.scss";
+@import '../../styles/vars.scss';
 
 .root {
   @media (min-width: $sm) {
@@ -42,9 +42,9 @@
 .post {
   background-color: lighten($color: $background, $amount: 50);
   border-radius: $border-radius;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.75fr auto;
   margin: 0.75rem auto;
   max-height: 300px;
   max-width: 300px;
@@ -53,6 +53,7 @@
   text-align: justify;
 
   & a {
+    cursor: pointer;
     font-weight: 600;
     margin-bottom: 0.75rem;
     text-decoration: underline;

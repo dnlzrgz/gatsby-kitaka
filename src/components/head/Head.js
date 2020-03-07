@@ -19,6 +19,7 @@ const Head = ({ title }) => {
     <Helmet title={`${title} - ${data.site.siteMetadata.title}`} defer={false}>
       <html lang="en" />
       <meta name="description" content={data.site.siteMetadata.description} />
+      <link rel="icon" type="image/png" href="/favicon.png"></link>
     </Helmet>
   );
 };

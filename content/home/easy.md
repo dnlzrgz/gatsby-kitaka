@@ -1,7 +1,7 @@
 ---
 title: 'Easy'
 type: 'section'
-doodle: 'DancingDoodle'
+image: '/doodles/DancingDoodle.svg'
 order: 1
 ---
 
