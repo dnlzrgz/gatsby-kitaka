@@ -4,7 +4,6 @@
   @media (min-width: $sm) {
     padding: 0 9%;
     margin: 0 auto;
-    margin-bottom: 4.75rem;
   }
 
   @media (min-width: $md) {
@@ -32,6 +31,7 @@
   grid-template-rows: repeat(4, auto);
   place-items: center;
   gap: 1.75rem;
+  margin-bottom: 4.75rem;
 }
 
 .name,
@@ -57,6 +57,10 @@
   }
 }
 
+.message {
+  margin-bottom: 1.75rem;
+}
+
 .required {
   & input,
   & textarea {
@@ -65,16 +69,15 @@
 }
 
 .submit {
-  border: none;
-  background-color: $black;
+  border: 3px solid $black;
+  background-color: transparent;
   line-height: 0;
-  color: $white;
+  color: $black;
   width: 9rem;
   padding: 1.75rem 2.75rem;
-  transition: all 0.15s ease-in;
+  transition: all 0.1s ease-in;
 
   &:hover {
-    font-weight: 600;
     transform: scale(1.1);
     color: $white;
     background-color: $black;
