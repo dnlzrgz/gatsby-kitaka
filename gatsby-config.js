@@ -4,6 +4,20 @@ const siteMetadata = {
   copy:
     '© Daniel (Danielkvist) 2020. Made with Gatsby and love, a lot of love.',
   pages: {
+    home: {
+      contactForm: {
+        netlify: false,
+        action: '',
+        method: 'POST',
+        fields: {
+          nameLabel: 'Your Name',
+          emailLabel: 'Your Email',
+          messageLabel: 'Your Message',
+          messageLimit: 750,
+          button: 'Send!',
+        },
+      },
+    },
     notFound: {
       msg: '404',
     },

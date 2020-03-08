@@ -1,0 +1,82 @@
+@import '../../styles/vars.scss';
+
+.root {
+  @media (min-width: $sm) {
+    padding: 0 9%;
+    margin: 0 auto;
+    margin-bottom: 4.75rem;
+  }
+
+  @media (min-width: $md) {
+    padding: 0;
+  }
+}
+
+.title {
+  margin: 0 auto;
+  margin-bottom: 1.75rem;
+  max-width: $xs;
+
+  @media (min-width: $md) {
+    font-size: $h2;
+  }
+
+  @media (min-width: $lg) {
+    font-size: $h3;
+  }
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  place-items: center;
+  gap: 1.75rem;
+}
+
+.name,
+.email,
+.message {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+
+  & input,
+  & textarea {
+    border: none;
+    border-bottom: 3px solid $grey;
+    background-color: $white;
+    border-radius: 0;
+    padding: 0.75rem 1.75rem;
+    transition: border 0.15s ease-in;
+  }
+
+  & input:focus,
+  & textarea:focus {
+    border-bottom: 3px solid $black;
+  }
+}
+
+.required {
+  & input,
+  & textarea {
+    border-bottom: 3px solid $required;
+  }
+}
+
+.submit {
+  border: none;
+  background-color: $black;
+  line-height: 0;
+  color: $white;
+  width: 9rem;
+  padding: 1.75rem 2.75rem;
+  transition: all 0.15s ease-in;
+
+  &:hover {
+    font-weight: 600;
+    transform: scale(1.1);
+    color: $white;
+    background-color: $black;
+  }
+}
