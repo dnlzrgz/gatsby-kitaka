@@ -24,7 +24,7 @@ const LatestPosts = () => {
 
   return (
     <section className={styles.root}>
-      <header>
+      <header className="container">
         <h1 className={styles.title}>Latest Posts</h1>
       </header>
 

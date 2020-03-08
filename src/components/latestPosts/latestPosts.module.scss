@@ -12,19 +12,6 @@
   }
 }
 
-.posts {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: $md;
-  flex-shrink: 0;
-
-  @media (min-width: $md) {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-}
-
 .title {
   margin: 0 auto;
   margin-bottom: 1.75rem;
@@ -36,6 +23,19 @@
 
   @media (min-width: $lg) {
     font-size: $h3;
+  }
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: $md;
+  flex-shrink: 0;
+
+  @media (min-width: $md) {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 
