@@ -6,9 +6,9 @@ const siteMetadata = {
   pages: {
     home: {
       contactForm: {
-        netlify: false,
         action: '',
-        method: 'POST',
+        method: '',
+        netlify: false,
         fields: {
           nameLabel: 'Your Name',
           emailLabel: 'Your Email',
@@ -50,7 +50,7 @@ const plugins = [
   {
     resolve: 'gatsby-plugin-purgecss',
     options: {
-      // printRejected: true,
+      printRejected: true,
       // develop: true,
     },
   },

@@ -3,11 +3,15 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
+import FormInput from './fields/FormInput';
+import FormTextarea from './fields/FormTextarea';
+import FormSubmit from './fields/FormSubmit';
+
 import styles from './contactForm.module.scss';
 
 const validationSchema = Yup.object().shape({
   name: Yup.string()
-    .min(3, 'Error')
+    .min(2, 'Error')
     .max(255, 'Error')
     .required('Error'),
   email: Yup.string()
@@ -25,9 +29,9 @@ const ContactForm = () => {
           pages {
             home {
               contactForm {
-                netlify
                 action
                 method
+                netlify
                 fields {
                   nameLabel
                   emailLabel
@@ -43,7 +47,11 @@ const ContactForm = () => {
     }
   `);
 
-  const { action, method } = data.site.siteMetadata.pages.home.contactForm;
+  const {
+    action,
+    method,
+    netlify,
+  } = data.site.siteMetadata.pages.home.contactForm;
 
   const {
     nameLabel,
@@ -60,11 +68,11 @@ const ContactForm = () => {
       </header>
 
       <Formik
-        initialValues={{ name: '', email: '', message: '' }}
+        initialValues={{ bot: '', name: '', email: '', message: '' }}
         validationSchema={validationSchema}
         onSubmit={(values, { setSubmitting, resetForm }) => {
           setSubmitting(true);
-          resetForm({ name: '', email: '', message: '' });
+          resetForm({ bot: '', name: '', email: '', message: '' });
         }}
       >
         {({
@@ -80,70 +88,55 @@ const ContactForm = () => {
             <form
               action={action}
               method={method}
+              data-netlify={netlify ? true : null}
               className={styles.form}
               onSubmit={handleSubmit}
             >
-              <label
-                name={nameLabel}
-                htmlFor="name"
-                className={`${styles.name} ${
-                  touched.name && errors.name ? styles.required : null
-                }`}
-              >
-                {nameLabel}
-                <input
-                  id="name"
-                  type="text"
-                  name="name"
-                  placeholder={nameLabel}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.name}
-                ></input>
-              </label>
-              <label
-                name={emailLabel}
-                htmlFor="email"
-                className={`${styles.email} ${
-                  touched.email && errors.email ? styles.required : null
-                }`}
-              >
-                {emailLabel}
-                <input
-                  id="email"
-                  type="mail"
-                  name="email"
-                  inputMode="email"
-                  placeholder={emailLabel}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.email}
-                />
-              </label>
-              <label
-                name={messageLabel}
-                htmlFor="message"
-                className={`${styles.message} ${
-                  touched.message && errors.message ? styles.required : null
-                }`}
-              >
-                {messageLabel}
-                <textarea
-                  id="message"
-                  name="message"
-                  maxLength={messageLimit}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.message}
-                />
-              </label>
-              <button
-                type="submit"
+              {netlify ? (
+                <input name="bot-field" type="hidden" value={values.bot} />
+              ) : null}
+
+              <FormInput
+                fieldLabel={nameLabel}
+                name="name"
+                id="name"
+                type="text"
+                className={styles.name}
+                touched={touched.name}
+                errors={errors.name}
+                handleChange={handleChange}
+                handleBlur={handleBlur}
+                value={values.name}
+              />
+              <FormInput
+                fieldLabel={emailLabel}
+                name="email"
+                id="email"
+                type="text"
+                className={styles.email}
+                touched={touched.name}
+                errors={errors.email}
+                handleChange={handleChange}
+                handleBlur={handleBlur}
+                value={values.email}
+              />
+              <FormTextarea
+                fieldLabel={messageLabel}
+                name="message"
+                id="message"
+                className={styles.message}
+                maxLength={messageLimit}
+                touched={touched.message}
+                errors={errors.message}
+                handleChange={handleChange}
+                handleBlur={handleBlur}
+                value={values.message}
+              />
+              <FormSubmit
                 className={styles.submit}
                 disabled={isSubmitting}
-              >
-                {button}
-              </button>
+                label={button}
+              />
             </form>
           );
         }}
