@@ -34,6 +34,14 @@ Then:
 
 ```bash
 cd my-site
+
+# And
+
+gatsby develope
+
+# Or
+
+npm start
 ```
 
 ## Deploying to Netlify
