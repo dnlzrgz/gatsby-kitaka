@@ -11,14 +11,16 @@ import styles from './contactForm.module.scss';
 
 const validationSchema = Yup.object().shape({
   name: Yup.string()
-    .min(2, 'Error')
-    .max(255, 'Error')
-    .required('Error'),
+    .min(2, 'Your name is too short!')
+    .max(255, 'Your name is too long!')
+    .required('I need your name!'),
   email: Yup.string()
-    .email('Error')
-    .max(255, 'Error')
-    .required('Error'),
-  message: Yup.string().required('Error'),
+    .email('Your email is invalid!')
+    .max(255, 'Your email is too long!')
+    .required('I need your email!'),
+  message: Yup.string().required(
+    'Tell me the reasons why you are contacting me!'
+  ),
 });
 
 const ContactForm = () => {
@@ -89,6 +91,7 @@ const ContactForm = () => {
               action={action}
               method={method}
               data-netlify={netlify ? true : null}
+              neltify-honeypot={netlify ? 'bot-field' : null}
               className={styles.form}
               onSubmit={handleSubmit}
             >
