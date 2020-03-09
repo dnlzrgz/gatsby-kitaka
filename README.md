@@ -34,8 +34,10 @@ Then:
 
 ```bash
 cd my-site
-
-# And
-
-npm install
 ```
+
+## Deploying to Netlify
+
+> This is a personal recommendation based on my own experience. For more information on this, please visit [Gatsby's official documentation about deploying on Netlify](https://www.gatsbyjs.org/docs/deploying-to-netlify/).
+
+For the `Build` command, instead of the default and simple `gatsby build` I recommend to use `gatsby clean && gatsby build`.
