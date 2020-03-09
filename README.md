@@ -27,7 +27,7 @@ gatsby new [project] https://github.com/danielkvist/gatsby-kitaka
 For example:
 
 ```bash
-gatsby my-site https://github.com/danielkvist/gatsby-kitaka
+gatsby new my-site https://github.com/danielkvist/gatsby-kitaka
 ```
 
 Then:
