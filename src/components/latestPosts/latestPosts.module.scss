@@ -50,12 +50,16 @@
   max-width: 300px;
   overflow-x: auto;
   padding: 1.75rem;
-  text-align: justify;
+  transition: transform 0.1s ease-in;
 
   & a {
     cursor: pointer;
     font-weight: 600;
     margin-bottom: 0.75rem;
     text-decoration: underline;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
