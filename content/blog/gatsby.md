@@ -1,5 +1,5 @@
 ---
-title: 'Gatsby'
+title: 'Build your next Gatsby project with Kitaka'
 description: 'Sed imperdiet vel lorem ut sodales. Curabitur at massa eget tellus imperdiet pulvinar.'
 type: 'post'
 date: ''

@@ -1,5 +1,5 @@
 ---
-title: 'Netlify'
+title: 'Deploy your site easily on Netlify'
 description: 'Sed varius leo at ante eleifend, sed sagittis risus maximus.'
 type: 'post'
 date: ''
