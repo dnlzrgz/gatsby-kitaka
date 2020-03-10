@@ -1,4 +1,4 @@
-@import "../../styles/vars.scss";
+@import '../../styles/vars.scss';
 
 .root {
   display: grid;
@@ -11,9 +11,8 @@
 
 .title,
 .subtitle {
-  margin-left: 7%;
   margin-right: 7%;
-  text-align: center;
+  text-align: left;
 }
 
 .subtitle {
