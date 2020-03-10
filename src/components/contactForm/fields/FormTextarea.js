@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from '../contactForm.module.scss';
+import styles from './fields.module.scss';
 
 const FormTextarea = (props) => {
   const {
@@ -21,7 +21,7 @@ const FormTextarea = (props) => {
     <label
       name={name}
       htmlFor={id}
-      className={`${className} ${touched && errors ? styles.required : null}`}
+      className={`${styles.root} ${touched && errors ? styles.required : null}`}
     >
       {fieldLabel}
       <textarea

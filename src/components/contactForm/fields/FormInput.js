@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from '../contactForm.module.scss';
+import styles from './fields.module.scss';
 
 const FormInput = (props) => {
   const {
@@ -9,7 +9,6 @@ const FormInput = (props) => {
     name,
     id,
     type,
-    className,
     touched,
     errors,
     handleChange,
@@ -21,7 +20,7 @@ const FormInput = (props) => {
     <label
       name={name}
       htmlFor={id}
-      className={`${className} ${touched && errors ? styles.required : null}`}
+      className={`${styles.root} ${touched && errors ? styles.required : null}`}
     >
       {fieldLabel}
       <input

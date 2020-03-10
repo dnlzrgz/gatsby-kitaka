@@ -104,7 +104,6 @@ const ContactForm = () => {
                 name="name"
                 id="name"
                 type="text"
-                className={styles.name}
                 touched={touched.name}
                 errors={errors.name}
                 handleChange={handleChange}
@@ -116,7 +115,6 @@ const ContactForm = () => {
                 name="email"
                 id="email"
                 type="text"
-                className={styles.email}
                 touched={touched.name}
                 errors={errors.email}
                 handleChange={handleChange}
@@ -127,7 +125,6 @@ const ContactForm = () => {
                 fieldLabel={messageLabel}
                 name="message"
                 id="message"
-                className={styles.message}
                 maxLength={messageLimit}
                 touched={touched.message}
                 errors={errors.message}
@@ -135,15 +132,12 @@ const ContactForm = () => {
                 handleBlur={handleBlur}
                 value={values.message}
               />
-              <FormSubmit
-                className={styles.submit}
-                disabled={isSubmitting}
-                label={button}
-              />
+              <FormSubmit disabled={isSubmitting} label={button} />
             </form>
           );
         }}
       </Formik>
+      <div className={styles.stilt}></div>
     </section>
   );
 };

@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './submit.module.scss';
+
 const FormSubmit = (props) => {
-  const { className, disabled, label } = props;
+  const { disabled, label } = props;
 
   return (
-    <button type="submit" className={className} disabled={disabled}>
+    <button type="submit" className={styles.root} disabled={disabled}>
       {label}
     </button>
   );

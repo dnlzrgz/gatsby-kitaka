@@ -1,0 +1,33 @@
+@import '../../../styles/vars.scss';
+
+.root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+
+  & input,
+  & textarea {
+    background-color: $white;
+    border-bottom: 3px solid $grey;
+    border-radius: 0;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    transition: border 0.15s ease-in;
+  }
+
+  & input:focus,
+  & textarea:focus {
+    border-bottom: 3px solid $black;
+  }
+}
+
+.message {
+  margin-bottom: 1.75rem;
+}
+
+.required {
+  & input,
+  & textarea {
+    border-bottom: 3px solid $required;
+  }
+}
