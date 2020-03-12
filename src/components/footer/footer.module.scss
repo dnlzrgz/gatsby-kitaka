@@ -1,8 +1,7 @@
-@import "../../styles/vars.scss";
+@import '../../styles/vars.scss';
 
 .root {
-  position: relative;
-  background-color: darken($color: $background, $amount: 70);
+  background-color: $background-darkest;
   color: $white;
   padding: 1.75rem;
   position: sticky;

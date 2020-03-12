@@ -3,6 +3,11 @@ $black: #272727;
 $white: #eff1f3;
 $grey: #696773;
 $background: $white;
+$background-darkest: darken(
+  $color: $background,
+  $amount: 70,
+);
+
 $required: #fc3e3e;
 
 $primary: #fed766;
