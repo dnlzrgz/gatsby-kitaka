@@ -1,35 +1,16 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
 
 import Layout from '../components/layout/Layout';
+import Head from '../components/head/Head';
+import NotFound from '../components/notFound/NotFound';
 
-const NotFound = () => {
-  const data = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          pages {
-            notFound {
-              msg
-            }
-          }
-        }
-      }
-    }
-  `);
-
+const NotFoundPage = () => {
   return (
-    <Layout title="404">
-      <div
-        className="container"
-        style={{ height: '100vh', display: 'grid', placeContent: 'center' }}
-      >
-        <h1 style={{ textAlign: 'center' }}>
-          {data.site.siteMetadata.pages.notFound.msg}
-        </h1>
-      </div>
+    <Layout>
+      <Head title="404" />
+      <NotFound />
     </Layout>
   );
 };
 
-export default NotFound;
+export default NotFoundPage;

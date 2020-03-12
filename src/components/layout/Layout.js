@@ -1,18 +1,21 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
-import Head from '../head/Head';
 import Footer from '../footer/Footer';
 
 import styles from './layout.module.scss';
 
-const Layout = (props) => {
+const Layout = ({ children }) => {
   return (
     <Fragment>
-      <Head title={props.title} />
-      <main className={styles.root}>{props.children}</main>
+      <main className={styles.root}>{children}</main>
       <Footer />
     </Fragment>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.array.isRequired,
 };
 
 export default Layout;

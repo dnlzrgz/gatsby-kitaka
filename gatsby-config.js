@@ -1,6 +1,9 @@
 const siteMetadata = {
   title: 'Kitaka',
   description: 'A good way to start a new Gatsby project.',
+  author: 'Danielkvist',
+  keywords: ['gatsby', 'starter'],
+  siteUrl: process.env.SITE_URL,
   copy:
     '© Daniel (Danielkvist) 2020. Made with Gatsby and love, a lot of love.',
   pages: {
