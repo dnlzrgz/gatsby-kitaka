@@ -41,7 +41,6 @@ FormInput.propTypes = {
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
   touched: PropTypes.string,
   errors: PropTypes.string,
   handleChange: PropTypes.func.isRequired,

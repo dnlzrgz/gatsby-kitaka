@@ -14,7 +14,6 @@ const FormSubmit = (props) => {
 };
 
 FormSubmit.propTypes = {
-  className: PropTypes.string.isRequired,
   disabled: PropTypes.bool.isRequired,
   label: PropTypes.string.isRequired,
 };
