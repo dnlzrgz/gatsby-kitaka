@@ -32,7 +32,7 @@ const LatestPosts = () => {
         {data.allMarkdownRemark.nodes.map((post) => {
           return (
             <div key={post.id} className={styles.post}>
-              <a>{post.frontmatter.title}</a>
+              <a href="#">{post.frontmatter.title}</a>
               <main>{post.frontmatter.description}</main>
             </div>
           );

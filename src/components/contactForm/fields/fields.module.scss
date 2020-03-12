@@ -4,12 +4,14 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
+  gap: 0.75rem;
 
   & > input,
   & > textarea {
     background-color: $white;
-    border: none;
-    border-bottom: 3px solid $grey;
+    border: 3px solid $grey;
+    border-right: none;
+    border-top: none;
     border-radius: 0;
     padding: 0.75rem 1.75rem;
     transition: border 0.15s ease-in;
@@ -17,17 +19,17 @@
 
   & input:focus,
   & textarea:focus {
-    border-bottom: 3px solid $black;
+    border: 3px solid $black;
+    border-right: none;
+    border-top: none;
   }
-}
-
-.message {
-  margin-bottom: 1.75rem;
 }
 
 .required {
   & input,
   & textarea {
-    border-bottom: 3px solid $required;
+    border: 3px solid $required;
+    border-right: none;
+    border-top: none;
   }
 }

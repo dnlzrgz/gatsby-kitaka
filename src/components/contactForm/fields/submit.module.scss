@@ -8,11 +8,11 @@
   margin-top: 4.75rem;
   padding: 1.75rem 2.75rem;
   transition: all 0.1s ease-in;
-  width: 9rem;
 
   &:hover {
-    transform: scale(1.1);
-    color: $white;
     background-color: $black;
+    color: $white;
+    font-weight: bold;
+    transform: scale(1.1) translateY(-0.75rem);
   }
 }

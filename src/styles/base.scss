@@ -1,4 +1,4 @@
-@import "./vars.scss";
+@import './vars.scss';
 
 body {
   background-color: $background;
@@ -9,16 +9,23 @@ body {
   max-width: $max;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.1s ease-in;
+}
+
+a:hover {
+  color: $secondary;
+  text-decoration: underline;
+}
+
 h1 {
   font-size: $h1;
 }
 
 h2 {
   font-size: $h2;
-}
-
-h3 {
-  font-size: $h3;
 }
 
 .container {

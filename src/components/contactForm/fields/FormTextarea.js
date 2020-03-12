@@ -30,6 +30,7 @@ const FormTextarea = (props) => {
         onChange={handleChange}
         onBlur={handleBlur}
         value={value}
+        placeholder={fieldLabel}
       />
     </label>
   );
