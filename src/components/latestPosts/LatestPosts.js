@@ -1,6 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
+import ReadMore from './readMore/ReadMore';
+import Post from './post/Post';
+
 import styles from './latestPosts.module.scss';
 
 const LatestPosts = () => {
@@ -25,23 +28,25 @@ const LatestPosts = () => {
   return (
     <section className={styles.root}>
       <header className="container">
-        <h1 className={styles.title}>Latest Posts</h1>
+        <h1>Latest Posts</h1>
       </header>
 
-      <main className={styles.posts}>
+      <main>
         {data.allMarkdownRemark.nodes.map((post) => {
           return (
-            <article key={post.id} className={styles.post}>
-              <header>
-                <a href="#">{post.frontmatter.title}</a>
-              </header>
-              <main>
-                <p>{post.frontmatter.description}</p>
-              </main>
-            </article>
+            <Post
+              to="#"
+              key={post.id}
+              title={post.frontmatter.title}
+              description={post.frontmatter.description}
+            />
           );
         })}
       </main>
+
+      <footer className={styles.footer}>
+        <ReadMore to="/blog/" />
+      </footer>
     </section>
   );
 };

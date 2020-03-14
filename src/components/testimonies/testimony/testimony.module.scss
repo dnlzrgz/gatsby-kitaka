@@ -1,0 +1,25 @@
+@import '../../../styles/vars.scss';
+
+.root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  margin: 0.75rem;
+
+  div {
+    background-color: lighten($color: $black, $amount: 50);
+    border-radius: 50%;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  a {
+    color: $black;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+}
