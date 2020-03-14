@@ -31,10 +31,14 @@ const LatestPosts = () => {
       <main className={styles.posts}>
         {data.allMarkdownRemark.nodes.map((post) => {
           return (
-            <div key={post.id} className={styles.post}>
-              <a href="#">{post.frontmatter.title}</a>
-              <main>{post.frontmatter.description}</main>
-            </div>
+            <article key={post.id} className={styles.post}>
+              <header>
+                <a href="#">{post.frontmatter.title}</a>
+              </header>
+              <main>
+                <p>{post.frontmatter.description}</p>
+              </main>
+            </article>
           );
         })}
       </main>

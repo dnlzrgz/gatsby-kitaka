@@ -3,6 +3,10 @@ $black: #272727;
 $white: #eff1f3;
 $grey: #696773;
 $background: $white;
+$background-lightest: lighten(
+  $color: $background,
+  $amount: 50,
+);
 $background-darkest: darken(
   $color: $background,
   $amount: 70,

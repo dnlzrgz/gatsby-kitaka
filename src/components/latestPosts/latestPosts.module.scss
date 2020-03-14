@@ -29,40 +29,32 @@
 .posts {
   display: flex;
   flex-wrap: wrap;
-  max-width: $md;
-  margin: 0 auto;
   justify-content: space-around;
+  margin: 0 auto;
+  max-width: $md;
 }
 
 .post {
-  background-color: lighten($color: $background, $amount: 50);
+  background-color: $background-lightest;
   border-radius: $border-radius;
-  display: grid;
-  flex-shrink: 0;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
-  grid-template-areas: 'description' 'link';
   height: 350px;
-  margin: 0.75rem 0.75rem;
-  overflow-x: auto;
+  margin: 0.75rem;
   padding: 1.75rem;
   transition: transform 0.1s ease-in;
-  box-shadow: none;
   width: 250px;
 
-  & a {
-    color: $black;
-    font-weight: 600;
-    grid-area: link;
-    margin-top: 0.75rem;
+  header {
+    margin-bottom: 0.75rem;
 
-    &:hover {
-      color: $secondary;
+    a {
+      color: $black;
+      font-weight: 600;
     }
   }
 
-  &:hover {
-    text-transform: none;
-    transform: translate(-15px, -15px);
+  @media (min-width: $md) {
+    &:hover {
+      transform: translate(-15px, -15px);
+    }
   }
 }
