@@ -115,7 +115,7 @@ const ContactForm = () => {
                 name="email"
                 id="email"
                 type="text"
-                touched={touched.name}
+                touched={touched.email}
                 errors={errors.email}
                 handleChange={handleChange}
                 handleBlur={handleBlur}
