@@ -1,7 +1,11 @@
 .root {
   display: grid;
   height: 100vh;
+  padding: 0;
   place-content: center;
   text-align: center;
-  padding: 0;
+
+  h1 {
+    margin-bottom: 4.75rem;
+  }
 }

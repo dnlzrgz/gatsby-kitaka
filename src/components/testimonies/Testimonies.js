@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
 import Testimony from './testimony/Testimony';
-import FindMore from './findMore/FindMore';
+import More from '../more/More';
 
 import styles from './testimonies.module.scss';
 
@@ -44,7 +44,7 @@ const Testimonies = () => {
       </main>
 
       <footer>
-        <FindMore to="#" />
+        <More to="#" text="More testimonies" />
       </footer>
     </section>
   );

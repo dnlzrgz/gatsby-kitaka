@@ -7,14 +7,12 @@
   grid-template-rows: 1fr;
   padding: 1.75rem;
 
-  & > a {
+  a {
+    color: $black;
     margin-left: auto;
-    color: $black;
   }
-}
 
-.logo {
-  & > a {
-    color: $black;
+  a:hover {
+    color: $secondary-light;
   }
 }

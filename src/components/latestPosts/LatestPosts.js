@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
-import ReadMore from './readMore/ReadMore';
+import More from '../more/More';
 import Post from './post/Post';
 
 import styles from './latestPosts.module.scss';
@@ -45,7 +45,7 @@ const LatestPosts = () => {
       </main>
 
       <footer className={styles.footer}>
-        <ReadMore to="/blog/" />
+        <More to="/blog/" text="Read more" />
       </footer>
     </section>
   );

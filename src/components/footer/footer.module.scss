@@ -8,7 +8,7 @@
   bottom: 0;
   left: 0;
 
-  & p {
+  p {
     font-size: $copy;
     text-align: center;
     padding-left: 7%;
@@ -25,9 +25,13 @@
   padding: 2.75rem 7%;
   max-width: $md;
 
-  & a {
-    margin: 0.25rem 0.75rem;
+  a {
     color: $white;
+    margin: 0.25rem 0.75rem;
+  }
+
+  a:hover {
+    color: $secondary-light;
   }
 
   @media (min-width: $md) {

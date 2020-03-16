@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+
+import More from '../more/More';
 
 import styles from './notFound.module.scss';
 
@@ -21,7 +23,7 @@ const NotFound = () => {
   return (
     <div className={`container ${styles.root}`}>
       <h1>{data.site.siteMetadata.pages.notFound.msg}</h1>
-      <Link to="/">Go Home</Link>
+      <More to="/" text="Return Home" />
     </div>
   );
 };
