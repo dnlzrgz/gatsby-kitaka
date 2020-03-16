@@ -54,7 +54,9 @@ const Footer = () => {
         <SocialLinks links={data.site.siteMetadata.social} />
       </section>
       <section>
-        <p>{data.site.siteMetadata.copy}</p>
+        <p
+          dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.copy }}
+        ></p>
       </section>
     </footer>
   );

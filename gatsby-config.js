@@ -5,7 +5,7 @@ const siteMetadata = {
   keywords: ['gatsby', 'starter'],
   siteUrl: process.env.SITE_URL,
   copy:
-    '© Daniel (Danielkvist) 2020. Made with Gatsby and love, a lot of love.',
+    '© Daniel (<a href="https://dkvist.com">Danielkvist</a>) 2020. Made with <a href="https://gatsbyjs.org">Gatsby</a> and love, a lot of love.',
   pages: {
     home: {
       contactForm: {
