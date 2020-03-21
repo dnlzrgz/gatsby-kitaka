@@ -57,15 +57,22 @@ const plugins = [
       // develop: true,
     },
   },
-  'gatsby-plugin-optimize-svgs',
-  'gatsby-transformer-remark',
+  {
+    resolve: 'gatsby-source-contentful',
+    options: {
+      spaceId: process.env.CONTENTFUL_SPACE_ID,
+      accessToken: process.env.CONTENTFUL_API_TOKEN,
+    },
+  },
+  'gatsby-transformer-sharp',
+  'gatsby-plugin-sharp',
   {
     resolve: 'gatsby-source-filesystem',
     options: {
-      name: 'src',
-      path: `${__dirname}/content/`,
+      path: './content',
     },
   },
+  'gatsby-plugin-robots-txt',
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
