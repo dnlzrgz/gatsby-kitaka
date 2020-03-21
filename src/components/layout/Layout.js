@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import Nav from '../nav/Nav';
-import Footer from '../footer/Footer';
+import Nav from './nav/Nav';
+import Footer from './footer/Footer';
 
 import styles from './layout.module.scss';
 
