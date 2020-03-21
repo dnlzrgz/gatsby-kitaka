@@ -25,15 +25,8 @@
   }
 }
 
-.form {
-  display: grid;
-  gap: 1.75rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-  place-items: center;
-}
-
-.stilt {
-  height: 4.75rem;
-  width: 100%;
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.75rem;
 }

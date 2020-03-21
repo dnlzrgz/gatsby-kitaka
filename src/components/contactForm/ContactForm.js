@@ -92,13 +92,11 @@ const ContactForm = () => {
               method={method}
               data-netlify={netlify ? true : null}
               neltify-honeypot={netlify ? 'bot-field' : null}
-              className={styles.form}
               onSubmit={handleSubmit}
             >
               {netlify ? (
                 <input name="bot-field" type="hidden" value={values.bot} />
               ) : null}
-
               <FormInput
                 fieldLabel={nameLabel}
                 name="name"
@@ -132,12 +130,13 @@ const ContactForm = () => {
                 handleBlur={handleBlur}
                 value={values.message}
               />
-              <FormSubmit disabled={isSubmitting} label={button} />
+              <div className={styles.submit}>
+                <FormSubmit disabled={isSubmitting} label={button} />
+              </div>
             </form>
           );
         }}
       </Formik>
-      <div className={styles.stilt}></div>
     </section>
   );
 };
