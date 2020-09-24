@@ -28,7 +28,7 @@
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sass": "^2.1.29",
     "gatsby-plugin-sharp": "^2.5.1",
-    "gatsby-source-contentful": "^2.2.2",
+    "gatsby-source-contentful": "^2.3.47",
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.53",
     "gatsby-transformer-sharp": "^2.4.1",
